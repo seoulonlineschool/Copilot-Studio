@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Microsoft Copilot Studio 소개</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="15" height="15" fill="#F25022"/>
+          <rect x="17" width="15" height="15" fill="#7FBA00"/>
+          <rect y="17" width="15" height="15" fill="#00A4EF"/>
+          <rect x="17" y="17" width="15" height="15" fill="#FFB900"/>
+        </svg>
+        <span>Microsoft <strong>Copilot Studio</strong></span>
+      </div>
+      <nav class="nav-links">
+        <a href="#overview">개요</a>
+        <a href="#features">핵심 기능</a>
+        <a href="#ai">AI 기능</a>
+        <a href="#channels">배포 채널</a>
+        <a href="#start">시작하기</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="메뉴 열기">&#9776;</button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#overview">개요</a>
+      <a href="#features">핵심 기능</a>
+      <a href="#ai">AI 기능</a>
+      <a href="#channels">배포 채널</a>
+      <a href="#start">시작하기</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-badge">Microsoft Power Platform</div>
+      <h1>Microsoft<br /><span class="gradient-text">Copilot Studio</span></h1>
+      <p class="hero-desc">
+        코드 없이도 강력한 AI 에이전트(Agent)를 만들 수 있는
+        Microsoft의 로우코드(Low-Code) AI 개발 플랫폼입니다.
+        조직의 데이터와 업무에 맞는 맞춤형 Copilot을 설계하고 배포하세요.
+      </p>
+      <div class="hero-cta">
+        <a href="https://aka.ms/copilotstudio" target="_blank" class="btn btn-primary">공식 사이트 방문</a>
+        <a href="https://learn.microsoft.com/microsoft-copilot-studio/" target="_blank" class="btn btn-outline">Microsoft Learn 문서</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <strong>Low-Code</strong>
+          <span>코딩 없이 에이전트 생성</span>
+        </div>
+        <div class="stat">
+          <strong>멀티채널</strong>
+          <span>Teams, Web, M365 배포</span>
+        </div>
+        <div class="stat">
+          <strong>AI 기반</strong>
+          <span>생성형 AI + 대화 흐름</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section class="section" id="overview">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">개요</span>
+        <h2>Copilot Studio란?</h2>
+        <p>Microsoft Copilot Studio는 기업과 개발자가 <strong>AI 에이전트(Agent)</strong>를 쉽고 빠르게 만들 수 있도록 설계된 로우코드 플랫폼입니다.</p>
+      </div>
+      <div class="overview-grid">
+        <div class="overview-card" data-animate>
+          <div class="ov-icon" style="background:#EBF3FF">🤖</div>
+          <h3>AI 에이전트 빌더</h3>
+          <p>자연어로 에이전트를 설명하면 AI가 자동으로 토픽(Topic)과 대화 흐름을 생성해 줍니다. 기술적 배경 없이도 누구나 에이전트를 제작할 수 있습니다.</p>
+        </div>
+        <div class="overview-card" data-animate>
+          <div class="ov-icon" style="background:#F0FFF4">🔗</div>
+          <h3>Power Platform 통합</h3>
+          <p>Power Automate, Power Apps, Dataverse와 완벽하게 통합되어 기업의 기존 데이터와 자동화 흐름을 에이전트에 연결할 수 있습니다.</p>
+        </div>
+        <div class="overview-card" data-animate>
+          <div class="ov-icon" style="background:#FFF7EB">🛡️</div>
+          <h3>엔터프라이즈 보안</h3>
+          <p>에이전트는 사용자의 권한 범위 내의 데이터만 접근합니다. Microsoft 365의 보안 정책과 Entra ID 인증을 그대로 활용합니다.</p>
+        </div>
+        <div class="overview-card" data-animate>
+          <div class="ov-icon" style="background:#FEF0F5">🌐</div>
+          <h3>두 가지 에이전트 유형</h3>
+          <p><strong>커스텀 에이전트:</strong> 독립형, Teams·웹·M365 등 다양한 채널에 배포 가능<br><strong>선언형 에이전트:</strong> Microsoft 365 Copilot을 특정 업무에 맞게 확장</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section section-alt" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">핵심 기능</span>
+        <h2>4가지 핵심 구성 요소</h2>
+        <p>Copilot Studio 에이전트는 <strong>Knowledge</strong>, <strong>Tools</strong>, <strong>Topics</strong>, <strong>Agents</strong> 네 가지 핵심 구성 요소로 이루어집니다.</p>
+      </div>
+      <div class="features-list">
+        <div class="feature-item" data-animate>
+          <div class="feature-num">01</div>
+          <div class="feature-body">
+            <div class="feature-icon">📚</div>
+            <div class="feature-text">
+              <h3>Knowledge (지식 소스)</h3>
+              <p>SharePoint, OneDrive, 공개 웹사이트, Dataverse 등 조직의 데이터 소스를 에이전트에 연결합니다. 에이전트는 설정된 지식 소스에서 정보를 검색하고 생성형 AI로 답변을 생성합니다. FAQ를 일일이 만들 필요 없이 문서를 연결하는 것만으로 지식 기반 에이전트를 구축할 수 있습니다.</p>
+              <div class="feature-tags">
+                <span>SharePoint</span><span>OneDrive</span><span>Web Search</span><span>Dataverse</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-item" data-animate>
+          <div class="feature-num">02</div>
+          <div class="feature-body">
+            <div class="feature-icon">🔧</div>
+            <div class="feature-text">
+              <h3>Tools (도구)</h3>
+              <p>에이전트가 실제 작업을 수행할 수 있도록 외부 서비스와 연결합니다. MCP(Model Context Protocol) 서버, 커스텀 커넥터, Power Automate 흐름 등을 통해 계정 조회, 데이터 업데이트, 외부 API 호출 등의 작업을 자동화할 수 있습니다.</p>
+              <div class="feature-tags">
+                <span>MCP 서버</span><span>Power Automate</span><span>커스텀 커넥터</span><span>REST API</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-item" data-animate>
+          <div class="feature-num">03</div>
+          <div class="feature-body">
+            <div class="feature-icon">💬</div>
+            <div class="feature-text">
+              <h3>Topics (토픽)</h3>
+              <p>에이전트가 사용자와 대화하는 방식을 설계합니다. 트리거 문구(Trigger Phrase)와 대화 경로(Conversation Path)를 정의하고, 분기(Branch) 처리, 변수(Variable) 활용, 시스템 토픽 설정이 가능합니다. 로우코드 캔버스에서 시각적으로 비즈니스 로직을 구성할 수 있습니다.</p>
+              <div class="feature-tags">
+                <span>트리거 문구</span><span>대화 경로</span><span>분기 처리</span><span>시스템 토픽</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-item" data-animate>
+          <div class="feature-num">04</div>
+          <div class="feature-body">
+            <div class="feature-icon">🤝</div>
+            <div class="feature-text">
+              <h3>Agents (에이전트 연결)</h3>
+              <p>여러 에이전트를 서로 연결하여 복잡한 업무를 효율적으로 분담시킬 수 있습니다. 특정 업무 영역을 전담하는 에이전트를 만들고, 조직 내 다른 에이전트와 협력하도록 구성하여 솔루션을 확장할 수 있습니다.</p>
+              <div class="feature-tags">
+                <span>멀티 에이전트</span><span>에이전트 오케스트레이션</span><span>확장성</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI CAPABILITIES -->
+  <section class="section" id="ai">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">AI 기능</span>
+        <h2>강력한 AI 기능</h2>
+        <p>Copilot Studio는 생성형 AI를 활용하여 에이전트 제작과 운영을 한층 더 지능적으로 만듭니다.</p>
+      </div>
+      <div class="ai-cards">
+        <div class="ai-card" data-animate>
+          <div class="ai-card-icon">✨</div>
+          <h3>생성형 답변 (Generative Answers)</h3>
+          <p>지식 소스(SharePoint, OneDrive, 웹사이트 등)를 연결하면 에이전트가 동적으로 정보를 검색하고 AI가 자연스러운 답변을 생성합니다. 출처 인용도 자동으로 포함됩니다.</p>
+        </div>
+        <div class="ai-card" data-animate>
+          <div class="ai-card-icon">🏗️</div>
+          <h3>생성형 빌더 (Generative Builder)</h3>
+          <p>자연어로 원하는 에이전트를 설명하면 AI가 토픽과 대화 흐름을 자동으로 설계해 줍니다. Adaptive Card 생성도 지원하여 비기술 사용자도 빠르게 에이전트를 구축할 수 있습니다.</p>
+        </div>
+        <div class="ai-card" data-animate>
+          <div class="ai-card-icon">🖥️</div>
+          <h3>컴퓨터 사용 (Computer Use)</h3>
+          <p>API 없이도 에이전트가 화면을 시각적으로 분석하고 단계별로 작업을 수행합니다. 레거시 애플리케이션이나 API가 없는 데스크톱 워크플로우도 자동화할 수 있습니다.</p>
+        </div>
+      </div>
+
+      <!-- Agent Flow Diagram -->
+      <div class="flow-diagram" data-animate>
+        <h3>에이전트 처리 흐름</h3>
+        <div class="flow-steps">
+          <div class="flow-step">
+            <div class="flow-icon">👤</div>
+            <span>사용자 입력</span>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-icon">🧠</div>
+            <span>의도 인식</span>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-icon">📚</div>
+            <span>데이터 검색</span>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-icon">⚙️</div>
+            <span>작업 수행</span>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-icon">💬</div>
+            <span>응답 생성</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHANNELS -->
+  <section class="section section-alt" id="channels">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">배포 채널</span>
+        <h2>다양한 채널에 배포</h2>
+        <p>Copilot Studio 에이전트는 한 번 만들면 여러 채널에 동시에 배포할 수 있습니다.</p>
+      </div>
+      <div class="channels-grid">
+        <div class="channel-card" data-animate>
+          <div class="channel-icon">💼</div>
+          <h3>Microsoft Teams</h3>
+          <p>팀 업무 채팅 환경에서 바로 에이전트와 대화할 수 있습니다.</p>
+        </div>
+        <div class="channel-card" data-animate>
+          <div class="channel-icon">🌐</div>
+          <h3>웹 채팅</h3>
+          <p>조직 내부 포털이나 외부 웹사이트에 에이전트를 임베드할 수 있습니다.</p>
+        </div>
+        <div class="channel-card" data-animate>
+          <div class="channel-icon">🤖</div>
+          <h3>Microsoft 365 Copilot</h3>
+          <p>Microsoft 365 Copilot에서 선언형 에이전트로 직접 실행됩니다.</p>
+        </div>
+        <div class="channel-card" data-animate>
+          <div class="channel-icon">📱</div>
+          <h3>모바일 & 기타</h3>
+          <p>Slack, Facebook, LINE 등 다양한 외부 채널로도 확장 배포가 가능합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GET STARTED -->
+  <section class="section" id="start">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">시작하기</span>
+        <h2>Copilot Studio 시작 방법</h2>
+        <p>아래 단계를 따라 첫 번째 AI 에이전트를 만들어보세요.</p>
+      </div>
+      <div class="steps">
+        <div class="step" data-animate>
+          <div class="step-badge">Step 1</div>
+          <h3>포털 접속</h3>
+          <p><a href="https://copilotstudio.microsoft.com" target="_blank">copilotstudio.microsoft.com</a>에 Microsoft 365 계정으로 로그인합니다.</p>
+        </div>
+        <div class="step" data-animate>
+          <div class="step-badge">Step 2</div>
+          <h3>에이전트 생성</h3>
+          <p>「새 에이전트 만들기」를 클릭하고, 원하는 에이전트를 자연어로 설명하면 생성형 빌더가 초안을 만들어줍니다.</p>
+        </div>
+        <div class="step" data-animate>
+          <div class="step-badge">Step 3</div>
+          <h3>지식 & 도구 추가</h3>
+          <p>SharePoint, OneDrive 등의 지식 소스와 Power Automate 흐름, 커넥터를 연결합니다.</p>
+        </div>
+        <div class="step" data-animate>
+          <div class="step-badge">Step 4</div>
+          <h3>테스트 & 배포</h3>
+          <p>내장된 테스트 창에서 에이전트를 테스트한 후, Teams, 웹 등 원하는 채널에 게시합니다.</p>
+        </div>
+      </div>
+      <div class="cta-box" data-animate>
+        <h3>지금 바로 시작해보세요!</h3>
+        <p>Microsoft Learn에서 공식 튜토리얼과 실습 모듈을 무료로 이용할 수 있습니다.</p>
+        <div class="cta-links">
+          <a href="https://copilotstudio.microsoft.com" target="_blank" class="btn btn-primary">Copilot Studio 열기</a>
+          <a href="https://learn.microsoft.com/training/paths/work-power-virtual-agents/" target="_blank" class="btn btn-outline-white">Microsoft Learn 학습 경로</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <svg width="20" height="20" viewBox="0 0 32 32" fill="none">
+          <rect width="15" height="15" fill="#F25022"/>
+          <rect x="17" width="15" height="15" fill="#7FBA00"/>
+          <rect y="17" width="15" height="15" fill="#00A4EF"/>
+          <rect x="17" y="17" width="15" height="15" fill="#FFB900"/>
+        </svg>
+        <span>Microsoft Copilot Studio</span>
+      </div>
+      <p class="footer-note">본 웹사이트는 <a href="https://learn.microsoft.com/microsoft-copilot-studio/" target="_blank">Microsoft Learn 공식 문서</a>를 기반으로 제작되었습니다.</p>
+      <p class="footer-copy">&copy; 2026 seoulonlineschool. Microsoft 및 Copilot Studio는 Microsoft Corporation의 상표입니다.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
